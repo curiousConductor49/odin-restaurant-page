@@ -3,12 +3,9 @@ function createAndAppendHomeContent(primaryDivContainer) {
     const pageBanner = document.createElement("section");
     const headline = document.createElement("h1");
     const tagline = document.createElement("p");
-    // create the text content for each element
-    const headlineContent = document.createTextNode("Welcome to Grand Blue")
-    const taglineContent = document.createTextNode("...where the ocean's finest cuisine awaits.")
     // set the text content and attributes for each element
-    headline.textContent = headlineContent;
-    tagline.textContent = taglineContent;
+    headline.textContent = "Welcome to Grand Blue";
+    tagline.textContent = "...where the ocean's finest cuisine awaits.";
     pageBanner.appendChild(headline);
     pageBanner.appendChild(tagline);
     pageBanner.setAttribute("id", "page-banner");
