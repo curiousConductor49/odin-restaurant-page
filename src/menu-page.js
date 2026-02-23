@@ -1,4 +1,4 @@
-function createAndAppendMenuContent(primaryDivContainer) {
+function createAndAppendMenuContent(displayDiv) {
     // create outer elements and append text content
     const menuContainer = document.createElement("section");
     const menuHeading  = document.createElement("h1");
@@ -165,7 +165,7 @@ function createAndAppendMenuContent(primaryDivContainer) {
     menuContainer.appendChild(mains);
     menuContainer.appendChild(desserts);
 
-    primaryDivContainer.appendChild(menuContainer);
+    displayDiv.appendChild(menuContainer);
 }
 
 export { createAndAppendMenuContent };

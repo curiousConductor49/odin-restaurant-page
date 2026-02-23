@@ -1,4 +1,4 @@
-function createAndAppendHomeContent(primaryDivContainer) {
+function createAndAppendHomeContent(displayDiv) {
     // create the elements for the first section
     const pageBanner = document.createElement("section");
     const headline = document.createElement("h1");
@@ -64,8 +64,8 @@ function createAndAppendHomeContent(primaryDivContainer) {
     restaurantFeatures.setAttribute("id", "restaurant-features");
     
     // append both sections to restaurant page's div container
-    primaryDivContainer.appendChild(pageBanner);
-    primaryDivContainer.appendChild(restaurantFeatures);
+    displayDiv.appendChild(pageBanner);
+    displayDiv.appendChild(restaurantFeatures);
 }
 
 export { createAndAppendHomeContent };
