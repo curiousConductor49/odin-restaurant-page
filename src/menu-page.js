@@ -4,13 +4,16 @@ function loadMenuPage(displayDiv) {
     const menuHeading  = document.createElement("h1");
     menuHeading.textContent = "Our Menu";
     menuContainer.appendChild(menuHeading);
+    menuContainer.setAttribute("id", "menu-container");
 
     // create menu categories and lists and append them for the appetizers section
     const appetizers = document.createElement("section");
     const appetizersHeading = document.createElement("h2");
     appetizersHeading.textContent = "Appetizers";
+    appetizers.setAttribute("id", "appetizers");
 
     const appetizersList = document.createElement("ul");
+    appetizersList.setAttribute("id", "appetizers-list");
     appetizers.appendChild(appetizersHeading);
     appetizers.appendChild(appetizersList);
 
@@ -34,8 +37,10 @@ function loadMenuPage(displayDiv) {
     const soups = document.createElement("section");
     const soupsHeading = document.createElement("h2");
     soupsHeading.textContent = "Soups";
+    soups.setAttribute("id", "soups");
 
     const soupsList = document.createElement("ul");
+    soupsList.setAttribute("id", "soups-list");
     soups.appendChild(soupsHeading);
     soups.appendChild(soupsList);
 
@@ -59,8 +64,10 @@ function loadMenuPage(displayDiv) {
     const salads = document.createElement("section");
     const saladsHeading = document.createElement("h2");
     saladsHeading.textContent = "Salads";
+    salads.setAttribute("id", "salads");
 
     const saladsList = document.createElement("ul");
+    saladsList.setAttribute("id", "salads-list");
     salads.appendChild(saladsHeading);
     salads.appendChild(saladsList);
 
@@ -80,8 +87,10 @@ function loadMenuPage(displayDiv) {
     const mains = document.createElement("section");
     const mainsHeading = document.createElement("h2");
     mainsHeading.textContent = "Mains";
+    mains.setAttribute("id", "mains");
 
     const mainsList = document.createElement("ul");
+    mainsList.setAttribute("id", "mains-list");
     mains.appendChild(mainsHeading);
     mains.appendChild(mainsList);
 
@@ -121,8 +130,10 @@ function loadMenuPage(displayDiv) {
     const desserts = document.createElement("section");
     const dessertsHeading = document.createElement("h2");
     dessertsHeading.textContent = "Desserts";
+    desserts.setAttribute("id", "desserts");
 
     const dessertsList = document.createElement("ul");
+    dessertsList.setAttribute("id", "desserts-list");
     desserts.appendChild(dessertsHeading);
     desserts.appendChild(dessertsList);
 
