@@ -12,6 +12,8 @@ function createAndAppendAboutContent(primaryDivContainer) {
     const storyHeading = document.createElement("h2");
     storyHeading.textContent = "Our Story";
     storySection.appendChild(storyHeading);
+    const storyDescription = document.createElement("p");
+    storyDescription.textContent = "The Grand Blue started in 20XX as a small but focused initiative to deliver the greatest tastes and sights the ocean has to offer. Seventeen years of culinary and architectural pioneering later, we are proud to be the world's one and only dining establishment completely underwater.";
 
     // const goalSection = document.createElement("section");
     // goalSection.setAttribute("id", "goal-container");
