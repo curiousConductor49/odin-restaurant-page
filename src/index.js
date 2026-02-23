@@ -1,6 +1,6 @@
-import { createAndAppendHomeContent } from "./home-page.js";
-import { createAndAppendMenuContent } from "./menu-page.js";
-import { createAndAppendAboutContent } from "./about-page.js";
+import { loadHomePage } from "./home-page.js";
+import { loadMenuPage } from "./menu-page.js";
+import { loadAboutPage } from "./about-page.js";
 
 const contentDiv = document.querySelector("#content");
 const homeTab = document.querySelector("#home-tab");
@@ -8,7 +8,7 @@ const menuTab = document.querySelector("#menu-tab");
 const aboutTab = document.querySelector("#about-tab");
 
 // default for when page is landed on
-createAndAppendHomeContent(contentDiv);
+loadHomePage(contentDiv);
 
 function switchTab(event) {
     switch (event.target) {
@@ -17,7 +17,7 @@ function switchTab(event) {
                 return;
             } else {
                 contentDiv.replaceChildren();
-                createAndAppendHomeContent(contentDiv);
+                loadHomePage(contentDiv);
             }
             break;
         case menuTab:
@@ -25,7 +25,7 @@ function switchTab(event) {
                 return;
             } else {
                 contentDiv.replaceChildren();
-                createAndAppendMenuContent(contentDiv);
+                loadMenuPage(contentDiv);
             }
             break;
         case aboutTab:
@@ -33,7 +33,7 @@ function switchTab(event) {
                 return;
             } else {
                 contentDiv.replaceChildren();
-                createAndAppendAboutContent(contentDiv);
+                loadAboutPage(contentDiv);
             }
             break;
     }

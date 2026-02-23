@@ -1,4 +1,4 @@
-function createAndAppendAboutContent(displayDiv) {
+function loadAboutPage(displayDiv) {
     // create page content container
     const aboutContainer = document.createElement("section");
     const aboutHeading = document.createElement("h1");
@@ -71,4 +71,4 @@ function createAndAppendAboutContent(displayDiv) {
     displayDiv.appendChild(aboutContainer);
 }
 
-export { createAndAppendAboutContent };
+export { loadAboutPage };

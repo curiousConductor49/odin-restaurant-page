@@ -1,4 +1,4 @@
-function createAndAppendHomeContent(displayDiv) {
+function loadHomePage(displayDiv) {
     // create the elements for the first section
     const pageBanner = document.createElement("section");
     const headline = document.createElement("h1");
@@ -68,4 +68,4 @@ function createAndAppendHomeContent(displayDiv) {
     displayDiv.appendChild(restaurantFeatures);
 }
 
-export { createAndAppendHomeContent };
+export { loadHomePage };
