@@ -13,19 +13,19 @@ function loadHomePage(displayDiv) {
     // create and append the elements for the second section
     const restaurantFeatures = document.createElement("section");
 
-    const diningFeature = document.createElement("article");
+    const diningFeature = document.createElement("section");
     const diningFeatureHeading = document.createElement("h2");
     const diningFeatureDescription = document.createElement("p");
 
-    const serviceFeature = document.createElement("article");
+    const serviceFeature = document.createElement("section");
     const serviceFeatureHeading = document.createElement("h2");
     const serviceFeatureDescription = document.createElement("p");
 
-    const sceneryFeature = document.createElement("article");
+    const sceneryFeature = document.createElement("section");
     const sceneryFeatureHeading = document.createElement("h2");
     const sceneryFeatureDescription = document.createElement("p");
 
-    const ambienceFeature = document.createElement("article");
+    const ambienceFeature = document.createElement("section");
     const ambienceFeatureHeading = document.createElement("h2");
     const ambienceFeatureDescription = document.createElement("p");
 
@@ -46,15 +46,19 @@ function loadHomePage(displayDiv) {
     // append elements and attributes for each element
     diningFeature.appendChild(diningFeatureHeading);
     diningFeature.appendChild(diningFeatureDescription);
+    diningFeature.setAttribute("id", "dining-feature");
 
     serviceFeature.appendChild(serviceFeatureHeading);
     serviceFeature.appendChild(serviceFeatureDescription);
+    serviceFeature.setAttribute("id", "service-feature");
 
     sceneryFeature.appendChild(sceneryFeatureHeading);
     sceneryFeature.appendChild(sceneryFeatureDescription);
+    sceneryFeature.setAttribute("id", "scenery-feature");
 
     ambienceFeature.appendChild(ambienceFeatureHeading);
     ambienceFeature.appendChild(ambienceFeatureDescription);
+    ambienceFeature.setAttribute("id", "ambience-feature");
 
     restaurantFeatures.appendChild(diningFeature);
     restaurantFeatures.appendChild(serviceFeature);
