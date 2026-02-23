@@ -4,6 +4,7 @@ function loadAboutPage(displayDiv) {
     const aboutHeading = document.createElement("h1");
     aboutHeading.textContent = "About Us";
     aboutContainer.appendChild(aboutHeading);
+    aboutContainer.setAttribute("id", "about-container");
     
     // create story section and inner elements
     const storySection = document.createElement("section");
