@@ -31,16 +31,26 @@ function createAndAppendAboutContent(primaryDivContainer) {
     const visionDescription3 = document.createElement("p");
     visionDescription3.textContent = "All on-site staff undergo intensive training, including diving lessons and first aid as part of the onboarding process. All customers are required to complete safety and guidance modules as outlined by our establishment upon entry. All ingredients for our menu items are sourcd sustainably and responsibly.";
 
+    const blockquoteContainer = document.createElement("div");
+    quoteBlockContainer.setAttribute("id", "blockquote-container");
     const founderQuoteBlock = document.createElement("blockquote");
     const founderQuoteText = document.createElement("p");
     founderQuoteText.textContent = "Never forget the Grand Blue brings you to nature, not the other way around. You're eating in the living room of a blue whale, but you're as small as shrimp on the grand scale of things, so don't bang the cutlery."
     founderQuoteBlock.appendChild(founderQuoteText);
-
     const founderQuoteSpeaker = document.createElement("p");
     founderQuoteSpeaker.textContent = "—John Blue, one of the founding members of the Grand Blue";
+    blockquoteContainer.appendChild(founderQuoteBlock);
+    blockquoteContainer.appendChild(founderQuoteSpeaker);
 
     const visionDescription4 = document.createElement("p");
     visionDescription4.textContent = "A significant portion of our proceeds has and always will go to a number of pollution clean-up efforts and verified ocean environmental non-profits. You can dine safely and comfortably knowing  your marine neighbours are at just as much ease."
+
+    // append vision section children
+    visionSection.appendChild(visionDescription1);
+    visionSection.appendChild(visionDescription2);
+    visionSection.appendChild(visionDescription3);
+    visionSection.appendChild(blockquoteContainer);
+    visionSection.appendChild(visionDescription4);
 
     // create location section and inner elements
     // const locationSection = document.createElement("section");
