@@ -1,4 +1,4 @@
-function createAndAppendAboutContent(primaryDivContainer) {
+function createAndAppendAboutContent(displayDiv) {
     // create page content container
     const aboutContainer = document.createElement("section");
     const aboutHeading = document.createElement("h1");
@@ -63,6 +63,12 @@ function createAndAppendAboutContent(primaryDivContainer) {
     const locationDescription = document.createElement("p");
     locationDescription.textContent = "The Grand Blue currently has establishments open in eight different locations across the world, all of them situated for optimal viewing and the least disturbance to marine ecosystems and whale migration routes. We hope to open a ninth and tenth shortly within the first half of 20XX. Please contact one of our outreach staff for further details if you wish to book a trip or place a reservation."
     locationSection.appendChild(locationDescription);
+
+    // append sections to page content container, then to the display div
+    aboutContainer.appendChild(storySection);
+    aboutContainer.appendChild(visionSection);
+    aboutContainer.appendChild(locationSection);
+    displayDiv.appendChild(aboutContainer);
 }
 
 export { createAndAppendAboutContent };
