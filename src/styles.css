@@ -65,16 +65,16 @@ body {
     font-size: 2.25rem;
 }
 
-#page-banner p, #restaurant-features section p {
+#page-banner p, #restaurant-features section p, #menu-container section li {
     font-family: 'Alice Regular', Georgia, 'Times New Roman', Times, serif;
     font-size: 1.30rem;
     letter-spacing: 0.7px;
 }
 
-/* #restaurant-features section h2, #menu-container section h2, #about-container section h2 {
+#restaurant-features section h2, #menu-container section h2, #about-container section h2 {
     font-family: Calligraffiti, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.85rem;
-} */
+}
 
 #menu-container h1, #about-container h1 {
     text-align: center;
@@ -105,7 +105,8 @@ body {
     color: #f1f1f1;
 }
 
-/* #menu-container section {
+/* menu page */
+#menu-container section {
     margin-block: 25px;
     width: 400px;
     height: auto;
@@ -115,4 +116,40 @@ body {
 
 #menu-container section ul {
     list-style-type: none;
-} */
+}
+
+#menu-container section li {
+    margin: 10px;
+    padding: 10px;
+}
+
+#menu-container section#appetizers li, #menu-container section#soups li, #menu-container section#salads li {
+    border-bottom: 2px solid #f1f1f1;
+}
+
+#menu-container section#mains li, #menu-container section#desserts li {
+    border-bottom: 2px solid #232937;
+}
+
+#menu-container section#appetizers {
+    background-color: #232937;
+    color: #DEDEDE;
+}
+
+#menu-container section#soups {
+    background-color: #69788e;
+    color: #DEDEDE;
+}
+
+#menu-container section#salads {
+    background-color: #295390;
+    color: #DEDEDE;
+}
+
+#menu-container section#mains {
+    background-color: #a0c1e7;
+}
+
+#menu-container section#desserts {
+    background-color: #e7dfce;
+}
