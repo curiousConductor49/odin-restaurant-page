@@ -65,7 +65,7 @@ body {
     font-size: 2.25rem;
 }
 
-#page-banner p, #restaurant-features section p, #menu-container section li {
+#page-banner p, #restaurant-features section p, #menu-container section li, #about-container p {
     font-family: 'Alice Regular', Georgia, 'Times New Roman', Times, serif;
     font-size: 1.30rem;
     letter-spacing: 0.7px;
@@ -152,4 +152,43 @@ body {
 
 #menu-container section#desserts {
     background-color: #e7dfce;
+}
+
+/* about page */
+#about-container h1, #about-container section#story-container h2, #about-container section#vision-container h2, #about-container section#location-container h2 {
+    background-image: url("./assets/whale-watercolour-painting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin-block: 30px;
+    margin-inline: auto;
+    padding: 20px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-container section p {
+    margin-block: 25px;
+    margin-inline: auto;
+    width: 450px;
+    padding: 30px;
+    height: auto;
+    border-radius: 0%;
+    background-color: #295390;
+    color: #DEDEDE;
+}
+
+#about-container #blockquote-container {
+    background-color: #e7dfce;
+}
+
+#about-container #blockquote-container p {
+    background-color: #232937;
 }
