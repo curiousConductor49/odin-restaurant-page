@@ -1,3 +1,4 @@
+/* font face declarations */
 @font-face {
     font-family: "Calligraffiti";
     src: url("./assets/calligraffiti/Calligraffiti.ttf");
@@ -43,7 +44,8 @@ body {
     border-bottom: 2px solid #232937;
 }
 
-#page-banner, #restaurant-features section {
+/* shared page styles */
+#page-banner, #restaurant-features section, #menu-container section {
     text-align: center;
     margin-block: 30px;
     margin-inline: auto;
@@ -58,15 +60,7 @@ body {
     gap: 15px;
 }
 
-#page-banner {
-    background-image: url("./assets/coloured-whale-sketch.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#page-banner h1 {
+#page-banner h1, #menu-container h1, #about-container h1 {
     font-family: Calligraffiti, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.25rem;
 }
@@ -77,9 +71,23 @@ body {
     letter-spacing: 0.7px;
 }
 
-#restaurant-features section h2 {
+/* #restaurant-features section h2, #menu-container section h2, #about-container section h2 {
     font-family: Calligraffiti, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.85rem;
+} */
+
+#menu-container h1, #about-container h1 {
+    text-align: center;
+    margin-block-start: 30px;
+}
+
+/* home page */
+#page-banner {
+    background-image: url("./assets/coloured-whale-sketch.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #dining-feature {
@@ -96,3 +104,15 @@ body {
     background-color: #232937;
     color: #f1f1f1;
 }
+
+/* #menu-container section {
+    margin-block: 25px;
+    width: 400px;
+    height: auto;
+    border-radius: 0%;
+    background-color: #a0c1e7;
+}
+
+#menu-container section ul {
+    list-style-type: none;
+} */
