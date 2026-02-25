@@ -25,19 +25,22 @@ body {
 }
 
 #site-nav {
-    margin: 15px;
+    margin-inline: auto;
+    margin-block: 15px;
     display: flex;
     gap: 25px;
 }
 
 .nav-btn {
     font-size: 1.45rem;
+    font-family: 'Alice Regular', Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
     padding-bottom: 5px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
+    color: #295390;
     border: none;
-    border-bottom: 2px dashed black;
+    border-bottom: 2px solid #232937;
 }
 
 #page-banner, #restaurant-features section {
@@ -45,14 +48,14 @@ body {
     margin-block: 30px;
     margin-inline: auto;
     padding: 20px;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 #page-banner {
@@ -63,6 +66,22 @@ body {
     background-attachment: fixed;
 }
 
+#page-banner h1 {
+    font-family: Calligraffiti, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.25rem;
+}
+
+#page-banner p, #restaurant-features section p {
+    font-family: 'Alice Regular', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.30rem;
+    letter-spacing: 0.7px;
+}
+
+#restaurant-features section h2 {
+    font-family: Calligraffiti, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.85rem;
+}
+
 #dining-feature {
     background-color: #e7dfce;
 }
@@ -71,7 +90,9 @@ body {
 }
 #scenery-feature {
     background-color: #295390;
+    color: #f1f1f1;
 }
 #ambience-feature {
     background-color: #232937;
+    color: #f1f1f1;
 }
