@@ -12,6 +12,28 @@ body {
     background-attachment: fixed;
 }
 
+#site-header {
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-block-start: 30px;
+}
+
+#site-nav {
+    margin: 15px;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-btn {
+    font-size: 1.45rem;
+    padding: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 2px dashed black;
+}
+
 /* @font-face {
     font-family: "Calligraffiti";
     src: url("./assets/calligraffiti/Calligraffiti.ttf");
