@@ -7,9 +7,16 @@ const contentDiv = document.querySelector("#content");
 const homeTab = document.querySelector("#home-tab");
 const menuTab = document.querySelector("#menu-tab");
 const aboutTab = document.querySelector("#about-tab");
+const pageTabs = document.querySelectorAll(".nav-btn");
 
-// default for when page is landed on
+// default content and appearance for when page is landed on
 loadHomePage(contentDiv);
+homeTab.style.color = "#295390";
+
+function changeTabColour(event) {
+    pageTabs.forEach(tab => tab.style.color = "#232937");
+    event.target.style.color = "#295390";
+}
 
 function switchTab(event) {
     switch (event.target) {
@@ -41,6 +48,15 @@ function switchTab(event) {
 }
 
 // tab switching logic
-homeTab.addEventListener("click", switchTab);
-menuTab.addEventListener("click", switchTab);
-aboutTab.addEventListener("click", switchTab);
+homeTab.addEventListener("click", (event) => {
+    switchTab(event);
+    changeTabColour(event);
+});
+menuTab.addEventListener("click", (event) => {
+    switchTab(event);
+    changeTabColour(event);
+});
+aboutTab.addEventListener("click", (event) => {
+    switchTab(event);
+    changeTabColour(event);
+});
