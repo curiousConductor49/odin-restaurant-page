@@ -28,30 +28,27 @@ function loadAboutPage(displayDiv) {
     const visionDescription1 = document.createElement("p");
     visionDescription1.textContent = "We at the Grand Blue have always strived to provide our customers with top-class culinary experience without compromising the safety of you or the breath-taking scenery you dine in."
     const visionDescription2 = document.createElement("p");
-    visionDescription2.textContent = "We emphasize cutting-edge technology to service our establishment and uphold a safety-first policy with year-round checks and inspections. Regular consulting sessions are held with ocean wildlife experts and habitat specialists to conform all aspects of the Grand Blue, whether it be waste dispoal, electrical consumption, or supply sources, to nature's needs.";
-    const visionDescription3 = document.createElement("p");
-    visionDescription3.textContent = "All on-site staff undergo intensive training, including diving lessons and first aid as part of the onboarding process. All customers are required to complete safety and guidance modules as outlined by our establishment upon entry. All ingredients for our menu items are sourced sustainably and responsibly.";
+    visionDescription2.textContent = "We emphasize cutting-edge technology to service our establishment and uphold a safety-first policy with year-round checks and inspections. Regular consulting sessions are held with ocean wildlife experts and habitat specialists to responsibly and sustainably conform all aspects of the Grand Blue to nature's needs, whether it be waste dispoal, electrical consumption, or ingredient sources.";
 
     const blockquoteContainer = document.createElement("div");
     blockquoteContainer.setAttribute("id", "blockquote-container");
     const founderQuoteBlock = document.createElement("blockquote");
     const founderQuoteText = document.createElement("p");
-    founderQuoteText.textContent = "Never forget the Grand Blue brings you to nature, not the other way around. You're eating in the living room of a blue whale, but you're as small as shrimp on the grand scale of things, so don't bang the cutlery."
+    founderQuoteText.textContent = `"Never forget the Grand Blue brings you to nature, not the other way around. You're eating in the living room of a blue whale, so don't bang the cutlery."`;
     founderQuoteBlock.appendChild(founderQuoteText);
     const founderQuoteSpeaker = document.createElement("p");
     founderQuoteSpeaker.textContent = "—John Blue, one of the founding members of the Grand Blue";
     blockquoteContainer.appendChild(founderQuoteBlock);
     blockquoteContainer.appendChild(founderQuoteSpeaker);
 
-    const visionDescription4 = document.createElement("p");
-    visionDescription4.textContent = "A significant portion of our proceeds has and always will go to a number of pollution clean-up efforts and verified ocean environmental non-profits. You can dine safely and comfortably knowing  your marine neighbours are at just as much ease."
+    const visionDescription3 = document.createElement("p");
+    visionDescription3.textContent = "A significant portion of our proceeds has and always will go to a significant number of ocean pollution clean-up efforts and environmental non-profits. You can dine safely and comfortably knowing your marine neighbours are at just as much ease."
 
     // append vision section children
     visionSection.appendChild(visionDescription1);
     visionSection.appendChild(visionDescription2);
-    visionSection.appendChild(visionDescription3);
     visionSection.appendChild(blockquoteContainer);
-    visionSection.appendChild(visionDescription4);
+    visionSection.appendChild(visionDescription3);
 
     // create location section and inner elements
     const locationSection = document.createElement("section");
@@ -62,7 +59,7 @@ function loadAboutPage(displayDiv) {
     locationSection.appendChild(locationHeading);
 
     const locationDescription = document.createElement("p");
-    locationDescription.textContent = "The Grand Blue currently has establishments open in eight different locations across the world, all of them situated for optimal viewing and the least disturbance to marine ecosystems and whale migration routes. We hope to open a ninth and tenth location shortly within the first half of 20XX. Please contact one of our outreach staff for further details if you wish to book a trip or place a reservation."
+    locationDescription.textContent = "The Grand Blue currently has establishments open in 8 different locations across the world, all of them situated for optimal viewing and the least disturbance to marine ecosystems and whale migration routes. We hope to open a ninth and tenth location shortly within the first half of 20XX. Please contact one of our outreach staff for further details if you wish to book a trip or place a reservation."
     locationSection.appendChild(locationDescription);
 
     // append sections to page content container, then to the display div
