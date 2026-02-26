@@ -4,7 +4,7 @@ function loadHomePage(displayDiv) {
     const headline = document.createElement("h1");
     const tagline = document.createElement("p");
     // set the text content and attributes for each element
-    headline.textContent = "Welcome to Grand Blue";
+    headline.textContent = "Welcome to the Grand Blue";
     tagline.textContent = "...where the ocean's finest cuisine awaits.";
     pageBanner.appendChild(headline);
     pageBanner.appendChild(tagline);
