@@ -47,13 +47,17 @@ body {
     border-bottom: 2px solid #232937;
 }
 
+#content {
+    margin-inline: 20px;
+}
+
 /* shared page styles */
 #page-banner, #restaurant-features section, #menu-container section {
     text-align: center;
     margin-block: 30px;
     margin-inline: auto;
     padding: 20px;
-    max-width: fit-content;
+    max-width: 450px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     display: flex;
@@ -91,6 +95,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 500px;
+    opacity: 0.85;
 }
 
 #dining-feature {
@@ -111,8 +117,6 @@ body {
 /* menu page */
 #menu-container section {
     margin-block: 25px;
-    width: 400px;
-    height: auto;
     border-radius: 0%;
     background-color: #a0c1e7;
 }
@@ -168,8 +172,8 @@ body {
     margin-block: 30px;
     margin-inline: auto;
     padding: 20px;
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -180,7 +184,7 @@ body {
 #about-container section p {
     margin-block: 25px;
     margin-inline: auto;
-    width: 450px;
+    max-width: 450px;
     padding: 30px;
     height: auto;
     border-radius: 0%;
